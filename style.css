@@ -98,9 +98,32 @@ body, html {
     font-size: 11.04px;
   }
 
+  .page {
+    background: hsl(31deg, 77%, 52%);
+    height: auto;
+    border-radius: 0.8rem;
+  }
+
   .cards {
     height: 100%;
     width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .card--1 {
+    border-top-right-radius: 0.8rem;
+    border-bottom-left-radius: 0;
+  }
+  .card--2 {
+    border-radius: 0.8rem;
+  }
+  .card--3 {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.8rem;
+  }
+  .card__text {
+    width: 23.1rem;
+    margin-bottom: 2.5rem;
   }
 }
 @media screen and (max-width: 400px) {
