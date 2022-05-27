@@ -1,0 +1,66 @@
+$white: hsl(0, 0%, 100%);
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+$font-big-shoulders: 'Big Shoulders Display', cursive;
+$font-lexend-deca: 'Lexend Deca', sans-serif;
+$fw-400: 400;
+$fw-700: 700;
+$fs-8s: 8.89px;
+$fs-10: 10px;
+$fs-11s: 11.04px;
+
+$mobile: 400px;
+$mobile-wide: 430px;
+$desktop: 1280px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: $fs-10;
+    font-family: $font-lexend-deca;
+}
+
+.page {
+    background: $very-light-gray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.cards {
+    height: 50rem;
+    width: 92rem;
+}
+
+@media screen and (max-width: $desktop) {
+    body, html {
+        font-size: $fs-8s;
+    }
+}
+
+@media screen and (max-width: $mobile-wide) {
+    body, html {
+        font-size: $fs-11s;
+    }
+
+    .cards {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    body, html {
+        font-size: $fs-10;
+    }
+}
