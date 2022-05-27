@@ -40,6 +40,28 @@ body, html {
 .cards {
     height: 50rem;
     width: 92rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    padding: 4.8rem;
+
+    &--1 {
+        background: $bright-orange;
+        border-top-left-radius: .8rem;
+        border-bottom-left-radius: .8rem;
+    }
+
+    &--2 {
+        background: $dark-cyan;
+    }
+
+    &--3 {
+        background: $very-dark-cyan;
+        border-top-right-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+    }
 }
 
 @media screen and (max-width: $desktop) {
